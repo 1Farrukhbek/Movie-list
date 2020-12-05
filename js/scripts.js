@@ -8,7 +8,8 @@ elFormMovie.addEventListener('submit', function (evt) {
 
   var SEARCH_QUERY = elMovieInput.value.trim();
 
-  fetch(`http://omdbapi.com/?apikey=${API_KEY}&s=${SEARCH_QUERY}&page=5`).then(function (response) {
+  fetch(`http://omdbapi.com/?apikey=${API_KEY}&s=${SEARCH_QUERY}`).then(function (response) {
+
     if (!response.ok) {
       throw new Error(`Error ${response.status}: ${response.statusText}`);
     }
@@ -19,5 +20,6 @@ elFormMovie.addEventListener('submit', function (evt) {
     console.log(data.Search);
     console.log(data.Search[0]);
     console.log(data.totalResults);
+   
   });
 });

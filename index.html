@@ -19,6 +19,33 @@
     </form>
   </div>
   
+  <div class="container">
+    <div class="row mt-2">
+      <div class="movie col-5">
+        <ul class="movie__list list-group"></ul>
+      </div>
+
+      <div class="col-7">
+        <h3 class="sr-only">Movie info</h3>
+        <div class="bg-secondary p-2 movie-card d-flex align-items-start">
+          <div class="movie-card__img">
+            <img class="" src="https://m.media-amazon.com/images/M/MV5BMTM3NTg2NDQzOF5BMl5BanBnXkFtZTcwNjc2NzQzOQ@@._V1_SX300.jpg" alt="photos" aria-placeholder="salom" width="170" height="250" >
+          </div>
+          <div class="movie-card__info px-2">
+            <h4 class="movie-card__heading">Fast andfurious Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis, delectus?</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <template>
+    <li class="movie__list-item d-flex align-items-center list-group-item">
+      <span class="flex-grow-1 text-truncate js-movie-title"></span>
+      <button type="button" class="btn btn-success btn-sm ml-2">Info</button>
+    </li>
+  </template>
+  
   <script src="js/jquery.min.js"></script>
   <script src="js/bootstrap.bundle.min.js"></script>
   <script src="js/utilities.js"></script>
